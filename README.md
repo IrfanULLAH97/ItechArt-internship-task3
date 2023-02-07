@@ -5,3 +5,22 @@
 * Install the Nginx on the created instance
 
 
+## To run the code follow below steps:
+### Create key-pair(for ssh), if it's not created already, use below command to create and store:
+```
+aws ec2 create-key-pair --key-name MyKeyPair --query 'KeyMaterial' --output text > ~/.ssh/MyKeyPair.pem
+chmod 400  ~/.ssh/MyKeyPair.pem
+```
+
+### To execute the code use below given terraform commands:
+```
+terraform init
+terraform fmt
+terraform validate
+terraform plan
+terraform apply --auto-approve
+```
+
+### then to destroy the created resources use below command:
+```
+terraform destroy --auto-approve
