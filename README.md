@@ -24,3 +24,4 @@ terraform apply --auto-approve
 ### then to destroy the created resources use below command:
 ```
 terraform destroy --auto-approve
+
